@@ -1,0 +1,895 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0,0,0);
+}
+
+
+.topnav {
+    overflow: hidden;
+    
+}
+
+    .topnav a {
+        float: right;
+        display: block;
+        color: rgb(0,0,0);
+        text-align: center;
+        padding: 17px 18px;
+        text-decoration: none;
+        background-color: rgb(169,169,169);
+        font-size: 10px;
+    }
+
+
+        .topnav a:hover {
+            background-color: rgb(221, 221, 221);
+            color: rgb(0,0,0);
+        }
+
+
+.topnav .login-container {
+    float: right;
+}
+
+    .topnav input[type=text] {
+        padding: 13.5px;
+        font-size: 11px;
+        border: 1px solid rgb(0, 0, 0);
+        width: 180px;
+    }
+
+    .topnav .login-container button {
+        float: right;
+        padding: 11.5px;
+        background: rgb(221, 221, 221);
+        font-size: 13px;
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+        .topnav .login-container button:hover {
+            background: rgb(204, 204, 204);
+        }
+.header {
+    overflow: hidden;
+    background-color: rgb(0, 128, 128);
+    padding: 20px 10px;
+}
+
+    .header a {
+        float: left;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 25px;
+        border-radius: 4px;
+        margin-left: 7px;
+    }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+            outline: 2px none rgb(0, 0, 0);
+        }
+
+        .header a:hover {
+            background-color: rgb(221, 221, 221);
+            color: rgb(0, 0, 0);
+        }
+
+        .header a.active {
+            background-color: rgb(47 79 79);
+            color: rgb(255,255,255);
+        }
+
+.header-right {
+    float: right;
+}
+h3, h2, h1 {
+    color: rgb(128,128,128);
+    font-family: sans-serif;
+    text-align: center;
+}
+p {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+body {
+    background: url(images/wallpaper.webp) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: rgb(3, 62, 62);
+    text-align: center;
+    border-top: 2px solid rgb(255, 215, 0);
+}
+
+.footer, td {
+    padding: 15px;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    width: 80%;
+    padding: 8px;
+    margin-left:20px;
+   
+   
+    }
+
+td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow:12px;
+
+}
+th {
+    text-align: left;
+    padding: 5px;
+    width: 33.3%;
+}
+
+td {
+    padding: 2px;
+}
+
+tfoot {
+    background-color: rgb(70, 199, 199);
+    height: 40px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(204, 255, 259);
+}
+
+
+.float-img {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 2px;
+    border: 1px;
+}
+#byproductscontainer {
+    display: grid;
+    grid-gap: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+
+#byproductscontainer.container {
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30),0 15px 12px rgba(0,0,0,0.22);
+}
+
+#byproductscontainer h3, #byproductscontainer p {
+    width: 90%;
+    padding: 0;
+    margin: 1em auto;
+}
+.byproductscontainer {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 20px rgb(128,128,128);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 25px;
+    width: 375px;
+    border: 2px solid rgb(255, 215, 0);
+}
+
+.button {
+    padding: .8em;
+    background-color: rgb(143, 188, 143);
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin: .8em auto .8em 0;
+    width: 100px;
+}
+
+
+
+.box {
+    margin-top: 12px;
+    margin-left: 100px;
+    margin-right: 140px;
+    margin-bottom: 12px;
+    box-shadow: 10px 10px 15px rgb(128,128,128);
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 2px solid rgb(255, 215, 0);
+}
+
+#topofpageicon {
+    width: 90px !important;
+    height: 90px;
+    position: fixed;
+    margin-left: 1150px;
+    bottom: 100px;
+}
+.footertext {
+    color: #FFFFFF;
+}
+.buynowbutton1{
+    margin-top:139px;
+    width:50%;
+}
+.buynowbutton2 {
+    margin-top: 145px;
+    width:50%;
+}
+.buynowbutton3 {
+    margin-top: 18px;
+    width:50%;
+}
+hr {
+    border: 2px solid rgb(255, 215, 0);
+}
+.homeimgset1 {
+    border-radius: 25px;
+    border: 2px solid rgb(255, 215, 0);
+    margin-left: 30px;
+    width: 380px;
+    height: 200px;
+}
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.item-left {
+    padding: 10px;
+    flex: 50%;
+    justify-content: center;
+}
+
+.item-right {
+    padding: 10px;
+    flex: 50%;
+    justify-content: center;
+}
+
+.leftcolumn {
+    padding: 10px;
+    flex: 33.3%;
+}
+
+.rightcolumn {
+    padding: 10px;
+    flex: 33.3%;
+}
+
+.centercolumn {
+    padding: 10px;
+    flex: 33.3%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column1 {
+    float: left;
+    width: 15%;
+    margin-top: 50px;
+    margin-left: 12px;
+}
+
+.column2 {
+    float: left;
+    width: 42.5%;
+}
+
+.column3 {
+    float: left;
+    width: 42.5%;
+    margin-top: 50px;
+}
+
+.donatetext {
+    text-align: left;
+    margin-left: 0px;
+    width: 300px;
+}
+
+#donateimages {
+    width: 300px;
+    height: 200px;
+    padding-left: 10px;
+    padding: 2px;
+}
+
+.shopnowbutton {
+    width: 200px;
+    height: 140px;
+}
+
+#donationtopimages {
+    width: 300px;
+    height: 200px;
+    padding-left: 10px;
+    justify-content: center;
+    padding: 2px;
+}
+
+.byproductsimages {
+    width: 250px;
+    height: 210px;
+    margin-left:41px;
+}
+
+.teasalesbuttons {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 5px 5px rgb(211,211,211);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 215, 0);
+}
+
+.donateleftflexbox {
+    justify-content: center;
+    margin: 5px;
+}
+
+.donaterightflexbox {
+    justify-content: center;
+    margin: 5px;
+}
+
+.donatebox {
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 2px solid rgb(255, 215, 0);
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.teaplantationsmaps {
+    width: 290px;
+    margin-left:50px;
+}
+
+#donatebutton {
+    width: 200px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.museummainimage {
+    width: 100%;
+}
+
+#donaterequestimage {
+    border-radius: 20px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.socialmediaicons {
+    width: 50%;
+    height: 50%;
+}
+
+#mainimage {
+    width: 100%;
+    height: 450px;
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    box-sizing: unset;
+}
+
+.homeimgset2 {
+    margin-left: 40px;
+    width: 75%;
+    height: 80%;
+}
+video{
+    width:100%;
+}
+.teaplantationslogo{
+    width:90%;
+}
+.museumsubimages{
+    width:30%;
+    height:200px;
+    margin-left:20px;
+
+}
+.teamuseummap{
+    width:99%;
+    margin-left:7px;
+}
+.donatelink {
+    color: rgb(100, 149, 237);
+}
+@media only screen and (max-width: 426px) {
+    .topnav .login-container {
+        float: none;
+    }
+
+        .topnav a, .topnav input[type=text], .topnav .login-container button {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 22px;
+        }
+
+    .topnav input[type=text] {
+        border: 1px solid rgb(204, 204, 204);
+    }
+
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header-right {
+        float: none;
+    }
+
+    .flexcontainer {
+        flex-direction: column !important;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    td {
+        font-size: 25px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .socialmediaicons {
+        width: 120px !important;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    button {
+        width: 20%;
+        height: 30%;
+    }
+
+    .donatebox {
+        width: 100% !important;
+        margin-left: 2px !important;
+        padding-left: 8px;
+    }
+
+    .box {
+        width: 98%;
+        border-radius: 1%;
+        margin-left: 1px;
+    }
+
+    .byproductscontainer {
+        margin-left: 2px;
+        width: 270px;
+    }
+
+    .buynowbutton1 {
+        width: 220px;
+        margin-top: 2px;
+    }
+
+    .buynowbutton2 {
+        width: 220px;
+        margin-top: 2px;
+    }
+
+    .buynowbutton3 {
+        width: 220px;
+        margin-top: 2px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footertext {
+        font-size: 8px;
+    }
+
+    .topnav input[type=text] {
+        display: block;
+        width: 300px;
+        height: 5px;
+        margin-bottom: 7px;
+        border-radius: 10px;
+    }
+
+    .topnav .login-container button {
+        display: block;
+        border: none;
+        margin-bottom: 7px;
+        padding: 12px;
+        text-align: center;
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    body {
+        justify-content: space-evenly;
+    }
+
+    .img01 {
+        width: 100%;
+        border-radius: 25px;
+        float: left;
+    }
+
+    img02 {
+        width: 845px;
+    }
+
+    .map {
+        width: 90%;
+    }
+
+    .box, li {
+        font-size: 15px;
+    }
+
+    .box, td {
+        font-size: 15px;
+    }
+
+    .homeimgset1 {
+        border: none;
+        width: 100%;
+        height: 20%;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .font {
+        font-size: 4px;
+    }
+
+    .column1 {
+        width: 90% !important;
+        margin-left: 2px;
+    }
+
+    #topofpageicon {
+        right: 9px;
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .column2 {
+        width: 90% !important;
+        margin-left: 12px;
+    }
+
+    .column3 {
+        width: 100%;
+    }
+    /*
+    .rimg {
+        height: 140px;
+        width: 200px;
+    }
+
+    .ttimg {
+        width: 100%;
+        align-content: center;
+        margin-left: 2px;
+        border: none;
+    }*/
+
+    .video {
+        width: 10px;
+    }
+
+    .homeimgset2 {
+        margin-top: 30px;
+    }
+
+    #donateimages, #donationtopimages {
+        margin-right: 15px;
+        padding-right: 12px;
+        margin-left: 2px;
+    }
+
+
+    .donatetext {
+        align-self: inherit;
+        width: 100px;
+        text-align: left;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .donateleftflexbox, .donaterightflexbox {
+        justify-content: center;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .teaplantationstable {
+        width: 80%;
+        margin-left: 2px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 2px;
+    }
+
+    .teaplantationsmaps {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #donatebutton {
+        border: none;
+    }
+
+    #mainimage {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .teaplantationslogo {
+        margin-left: 20px;
+    }
+
+    .byproductsimages {
+        margin-left: 2px;
+    }
+
+    .teasalesbuttons {
+        margin-left: 60px;
+    }
+
+    .museumsubimages {
+        width:100%;
+        margin-left:2px;
+    }
+    .teamuseummap{
+        margin-left:5px;
+    }
+}
+@media only screen and (min-width: 427px) and (max-width: 1204px) {
+        .topnav .login-container {
+            float: none;
+        }
+
+            .topnav a, .topnav input[type=text], .topnav .login-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 90%;
+                border-radius: 10px;               
+                padding: 22px;
+                height: 20px;
+                margin-bottom: 7px;
+            }
+
+    .topnav input[type=text] {
+        border: 1px solid rgb(204, 204, 204);
+        width: 60%;
+    }
+
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+        }
+
+        .header {
+            width: 100%;
+        }
+
+        .header-right {
+            float: none;
+        }
+
+        #loginbutton {
+            width: 20%;
+            text-align: center;
+        }
+
+        .header a {
+            font-size: 17px;
+        }
+
+        .footer {
+            width: 100%;
+        }
+
+        .box {
+            width: 90%;
+            margin-left: 20px;
+        }
+        .flexcontainer {
+            flex-direction: column !important;
+        }
+        .homeimgset1 {
+            margin-left:25%;
+        }
+
+        #homepagegallery {
+            width: 27%;
+            margin-left: 30px;
+        }
+        #mainimage{
+            width:100%!important;
+            height:40%;
+        }
+        .homeimgset2{
+
+            width:30%;
+            height:30%;
+        }
+        museumsubimages{
+            width:80%;
+        }
+        .column1 {
+            float: left;
+            margin-top: 50px;
+            width: 50%;
+            margin-left: 30%;
+        }
+
+        .column2 {
+            width: 90%;
+            font-size: 16px;
+            margin-left: 30px;
+        }
+
+        .column3 {
+            float: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 5%;
+        }
+        .teaplantationslogo{
+            width:50%;
+            margin-left:15%;
+        }
+        .byproductsimages{
+            margin-left:30%;
+        }
+       #byproductscontainer{
+           margin-left:90px;
+       }
+       .byproductscontainer{
+           width:100%;
+       }
+       .byproductslinks{
+           margin-left:30%;
+       }
+       .buynowbutton1,.buynowbutton2,.buynowbutton3{
+           margin-top:2px;
+           width:20%;
+       }
+       p{
+           font-size:16px;
+       }
+       h3,h2,h1{
+           font-size:20px;
+       }
+       li{
+           font-size:16px;
+       }
+       .donatebox{
+           width:60%;
+           margin-left:20%;
+       }
+        .donateleftflexbox,.donaterightflexbox {
+            justify-content: center;
+            margin: 5px;
+            margin-left:20px;
+        }
+        #donationtopimages,#donateimages{
+            width:60%;
+            border-radius:10px;
+            margin-left:20%;
+        }
+        .donatetext{
+            font-size:16px;
+            width:90%;
+        }
+        .teaplantationsmaps{
+            width:200%;
+            margin-left:1px;
+        }
+        #topofpageicon {
+            right: 25px;
+        }
+
+    }
+@media only screen and (min-width: 427px) and (max-width: 1258px) {
+    #homepagegallery,.museumsubimages {
+        width: 30%;
+        margin:2px;
+        height:200px;
+    }
+    .homeimgset1{
+        width:50%;
+    }
+    .homeimgset2 {
+        margin-left: 30%;
+    }
+    .byproductscontainer{
+        width:100%;
+    }
+    #donaterequestimage{
+        width:70%;
+        margin-left:15%;
+    }
+    #donatebutton{
+        margin-left:16%;
+    }
+    .teamuseummap{
+        border-radius:15px;
+        margin-left:2px;
+    }
+    #byproductscontainer {
+        grid-template-columns:none;
+    }
+
+
+}
