@@ -1,0 +1,113 @@
+body {
+    background: url(donateimages/background.webp);
+}
+input[type=submit], .backbtn {
+    background-color: rgb(119,136,153) !important;
+    color: rgb(255,255,255) !important;
+    padding: 14px 20px !important;
+    margin: 8px 0 !important;
+    border: double !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    font-size: medium !important;
+    width: 16% !important;
+}
+span {
+    color: rgb(128,128,128);
+    border: double;
+    background-color: rgb(119,136,153);
+    color: rgb(255,255,255);
+    padding: 9px;
+    margin: 2px;
+    float: left;
+}
+#error {
+    font-size: x-small;
+    color: rgb(255,0,0);
+}
+#donate {
+    margin-left: 40% !important;
+    width: 50% !important;
+}
+input[type=submit]:hover {
+    background-color: rgb(211,211,211);
+    color: rgb(0,0,0);
+}
+fieldset {
+    margin-bottom: 12px;
+    box-shadow: rgb(128,128,128);
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 2px solid rgb(255,255,255);
+}
+
+div {
+    border-radius: 5px;
+    background-color: rgb(255,255,255);
+    padding: 20px;
+    width: 60%;
+    margin-left: 18%;
+    border-color: rgb(0,100,0);
+    border-style: solid;
+}
+
+img {
+    width:20%;
+    height:20%;
+}
+h3, h2 {
+    color: rgb(169,169,169);
+}
+#mastercard,#visa{
+    width:10%;
+}
+#donatedesign{
+    width:100%;
+}
+#outputdonate{
+    width:100%;
+}
+p {
+    color: rgb(128,128,128);
+    width: 50%;
+}
+input[type=text], select, input[type=email], input[type=tel], input[type=date], input[type=number], input[type=gender], input[type=month], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.left{
+    float:left;
+}
+#output{
+    margin-top:10%;
+}
+@media only screen and (max-width: 426px) {
+    fieldset {
+        width: 95%;
+    }
+
+    div {
+        width: 95%;
+        margin-left: -2%;
+    }
+
+    input[type=submit] {
+        width: 0%;
+        margin-left: 4%;
+    }
+
+    .backbtn {
+        margin-left: 20%;
+    }
+
+    p {
+        width: 100%;
+    }
+    #output {
+        margin-top: 50% !important;
+    }
+}

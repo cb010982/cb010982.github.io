@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Form" />
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+</head>
+<body>
+    <form method="get" id="form">
+        <div>
+            <h1>Ticket Booking Form</h1>
+
+            <fieldset>
+
+                <legend>~Dates~</legend>
+                <p>
+                    <label for="dateofarrival">When are you coming?</label>
+                <p id="wrongdate"></p>
+                <input type="date" id="dateofarrival" name="dateofarrival" required />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>~Guests~</legend>
+                <p>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" pattern="[A-Za-z ]{1,100}" required />
+
+                </p>
+                <p>
+                    <label for="telephone">Mobile Number:</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="^[0-9]{10}$" required maxlength="10" />
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </p>
+                <p>
+
+                    <label for="email">Confirm Email:</label>
+                <p id="errorconfirmemail"></p>
+                <input type="email" id="confirmemail" name="confirmemail" required />
+
+                </p>
+                <p>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>~Tickets~</legend>
+                <p>
+                    <label for="SLadult">Sri Lankan(SL) Adult:</label>
+                    <input type="number" id="SLadult" name="ticket" min="0" value="0" />
+                </p>
+                <p>
+                    <label for="SLchild">Sri Lankan(SL) Child (4-13 years) :</label>
+                    <input type="number" id="SLchild" name="ticket" min="0" value="0" />
+                </p>
+                <p>
+                    <label for="Foriegnadult">Foriegn(FR) Adult:</label>
+                    <input type="number" id="Foriegnadult" name="ticket" min="0" value="0" />
+                </p>
+                <p>
+                    <label for="ForiegnChild">Foriegn(FR) Child (4-13 years):</label>
+                    <input type="number" id="ForiegnChild" name="ticket" min="0" value="0" />
+                </p>
+                <p>
+                    <label for="Infant">Infant (under 4 years):</label>
+                    <input type="number" id="Infant" name="ticket" min="0" value="0" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>~Duration~</legend>
+                <p>
+                    <label for="duration">Duration:</label>
+                    <select id="duration" name="duration">
+                        <option value="3hrs" selected>3 hours</option>
+                        <option value="1/2day">1/2 day</option>
+                        <option value="fullday">Full day</option>
+                    </select>
+                </p>
+            </fieldset>
+            <input type="submit" value="Add to order" name="addtoorder" id="addtoorder">
+            <input type="submit" value="Place an order" name="placeorder" id="placeorder">
+
+            <fieldset>
+                <p id="currentorder">
+                    Current order
+                </p>
+            </fieldset>
+            <fieldset>
+                <p id="costofthecurrentorder">
+                    Cost of current order = 0.00 LKR
+                </p>
+            </fieldset>
+            <fieldset>
+                <p id="overallorder">
+                    Overall order
+                </p>
+            </fieldset>
+            <fieldset>
+                <p id="overallcostoftheorder">
+                    Cost of overall order = 0.00 LKR
+                </p>
+            </fieldset>
+
+            <input type="submit" value="Check loyalty" id="loyalty">
+            <input type="submit" value="Add to favourites" id="addfavourites">
+            <input type="submit" value="Order favourites" id="orderfavourites">
+        </div>
+    </form>
+    <a href="tea museum.html" class="backbtn">Back</a>
+    <footer>
+      <!--- VectorStock. (n.d.). Leaves Wallpaper Vector Images (over 110,000). [online] Available at: https://www.vectorstock.com/royalty-free-vectors/leaves-wallpaper-vectors [Accessed 18 Dec. 2022]. -->
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

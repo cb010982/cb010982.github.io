@@ -1,0 +1,84 @@
+*{
+    font-family:Dubai;
+}
+input[type=text], select, input[type=email], input[type=tel], input[type=date], input[type=number], input[type=gender], input[type=month] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], .backbtn {
+    background-color: rgb(76, 175, 80);
+    color: rgb(255,255,255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: double;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: medium;
+    width: 49%;
+}
+
+    input[type=submit]:hover {
+        background-color: rgb(69, 160, 73);
+    }
+
+div {
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    margin-left: 20%;
+    border-color: rgb(0,100,0);
+    border-style: solid;
+}
+
+body {
+    background: url(museumimages/img11.webp) ;
+}
+h1 {
+    font-family: 'Felix Titling';
+    margin-left: 17%;
+    color: rgb(0,100,0);
+}
+fieldset {
+    margin-bottom: 12px;
+    box-shadow: rgb(128,128,128);
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 2px solid rgb(0,100,0);
+}
+#ticketinfo{
+    font-size:small;
+  
+}
+
+#errorconfirmemail, #wrongdate {
+    font-size: x-small;
+    color: red;
+}
+#loyalty, #addfavourites, #orderfavourites {
+    width:32%;
+}
+
+@media only screen and (max-width: 825px) {
+    fieldset {
+        width: 95%;
+    }
+
+    div {
+        width: 95%;
+        margin-left: -2%;
+    }
+
+    input[type=submit] {
+        width: 100% !important;
+    }
+
+
+}

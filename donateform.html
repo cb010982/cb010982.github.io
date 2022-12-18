@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Form" />
+    <title>Donate form</title>
+    <link rel="stylesheet" type="text/css" href="donate.css" />
+
+</head>
+<body>
+    <form method="get" id="form">
+        <div>
+            <h2>Donation</h2>
+            <p>Select a donation amount</p>
+            <br />
+
+            <span>
+                <input type="radio" value="100LKR" name="amount" id="100LKR">
+                <label for="100LKR">100LKR</label>
+            </span>
+            <span>
+                <input type="radio" value="500LKR" name="amount" id="500LKR">
+                <label for="100LKR">500LKR</label>
+            </span>
+            <span>
+                <input type="radio" value="1000LKR" name="amount" id="1000LKR">
+                <label for="100LKR">1000LKR</label>
+            </span>
+            <span>
+                <input type="radio" value="2000LKR" name="amount" id="2000LKR">
+                <label for="100LKR">2000LKR</label>
+            </span>
+            <span>
+                <input type="radio" value="5000LKR" name="amount" id="5000LKR">
+                <label for="100LKR">5000LKR</label>
+            </span>
+            <span>
+                <input type="radio" value="10000LKR" name="amount" id="10000LKR" checked>
+                <label for="100LKR">10000LKR</label>
+            </span>
+            <p id="output">Your choice of donation is 10000 LKR.</p>
+
+
+            <br /><br />
+            <hr />
+            <h3>Payment methods</h3>
+            <p>
+                <input type="radio" id="visa" name="cardType" value="visa" checked><img src="donateimages/visa.webp" />
+            </p>
+            <p>
+                <input type="radio" id="mastercard" name="cardType" value="mastercard"><img src="donateimages/mastercard.webp" />
+            </p>
+            <hr />
+
+            <fieldset>
+                <p class="left">
+                    <input type="text" id="name" name="name" placeholder="Cardholder name" pattern="[A-Za-z ]{1,100}" required /><br />
+                    <label for="name">Name on card</label>
+                <p class="left">
+                    <input type="text" id="cardno" name="cardno" placeholder="Card Number" pattern="^[0-9]{16}$" required maxlength="16" /><br />
+                    <label for="cardno">Credit Card Number</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p class="left">
+                    <input type="text" id="address" name="address" placeholder="Address" required /><br />
+                    <label for="address">Address</label>
+                </p>
+                <p class="left">
+                    <input type="text" id="securitycode" name="securitycode" placeholder="Card Verification Code" pattern="^[0-9]{3}$" required maxlength="3" /><br />
+                    <label for="securitycode">Security Code</label>
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <p>
+                <p id="error"></p>
+                <input type="month" id="expiryDate" name="expiryDate" required /><br />
+                <label for="expiryDate">Expiry date</label>
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Donate" name="donate" id="donate">
+                <p id="outputdonate"></p>
+
+            </fieldset>
+        </div>
+    </form>
+    <a href="donate.html" class="backbtn">Back</a>
+    <footer>
+        <!--- en.wikipedia, V.I. at (2005). English: Former Visa Inc. logo used from 2005 to 2014. [online] Wikimedia Commons. Available at: https://commons.wikimedia.org/wiki/File:Visa_Inc._logo.svg.
+                 pngimg.com. (n.d.). Mastercard logo PNG images free download. [online] Available at: https://pngimg.com/images/logos/mastercard [Accessed 18 Dec. 2022].
+                Wallpaper Boulevard. (n.d.). Wallpaper Boulevard. [online] Available at: https://www.wallpaperboulevard.com/search-result.aspx?q=leaves [Accessed 18 Dec. 2022].   ‌
+        ‌-->
+        ‌
+    </footer>
+    <script src="donate.js"></script>
+</body>
+</html>
