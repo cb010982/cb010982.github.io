@@ -58,7 +58,7 @@ fieldset {
   
 }
 
-#errorconfirmemail, #wrongdate {
+#errorconfirmemail, #wrongdate, #erroremail{
     font-size: x-small;
     color: red;
 }
