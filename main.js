@@ -30,6 +30,7 @@ const txtcostcurrentorder = document.getElementById("costofthecurrentorder");
 const txtoverallorder = document.getElementById("overallorder");
 const txtoverallcost = document.getElementById("overallcostoftheorder");
 const txterrorconfirmemail = document.getElementById("errorconfirmemail");
+const txterroremail = document.getElementById("erroremail");
 const txtloyalty = document.getElementById("loyalty");
 const errordate = document.getElementById("wrongdate");
 
@@ -48,6 +49,7 @@ txtforiegnadult.addEventListener("change", currentOrder);
 txtforiegnchild.addEventListener("change", currentOrder);
 txtinfant.addEventListener("change", currentOrder);
 txtconfirmemail.addEventListener("change", confirmemail);
+txtemail.addEventListener("change", confirmemail);
 txtloyalty.addEventListener("click", loyalty);
 txtaddfavourites.addEventListener("click", addToFavourites);
 txtorderfavourites.addEventListener("click", orderFavourite);
@@ -217,13 +219,19 @@ function loyalty(evt) {
 
 function confirmemail(evt) {
     evt.preventDefault(event);
-    if (txtemail.value != txtconfirmemail.value) {
-        txterrorconfirmemail.innerText = `*Email mismatch`;
-        txtconfirmemail.value = null;
-    }
-    else {
-        txterrorconfirmemail.innerText = null;
-
+    emailfield = txtemail.value;
+    confirmemailfield = txtconfirmemail.value;
+    if ((emailfield.length != 0) && (confirmemailfield.length != 0)) { 
+        if (emailfield != confirmemailfield) {
+            txterrorconfirmemail.innerText = `*Email mismatch`;
+            txterroremail.innerText = `*Email mismatch please enter again`;
+            txtconfirmemail.value = null;
+            txtemail.value = null;
+        }
+        else {
+            txterrorconfirmemail.innerText = null;
+            txterroremail.innerText = null;
+        }
     }
 }
 
